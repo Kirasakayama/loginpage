@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'font1';
+  src: url('fonts/MPLUS1p-Black.ttf');
+}
+
+@font-face {
+  font-family: 'font2';
+  src: url('fonts/MPLUS1p-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'font3';
+  src: url('fonts/MPLUS1p-Bold.ttf');
+}
+@font-face {
+  font-family: 'font4';
+  src: url('fonts/MPLUS1p-Medium.ttf');
+}
+@media (max-width: 700px) {
+  section {
+    width: 100vw !important;
+    height: 100vh;
+  }
+  .banner {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #cc99ff;
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#signUp {
+  font-weight: 900;
+  font-size: 35px;
+  font-family: 'font1';
+  color: #ffffff;
+}
+.banner {
+  height: 100vh;
+  width: 60vw;
+  background: #ffffff url('svgs/logo.svg');
+  background-repeat: no-repeat;
+  background-size: fit;
+  background-position: 50% 50%;
+  border-top-right-radius: 40px;
+}
+section {
+  width: 40vw;
+  position: relative;
+  padding-right: 4vmin;
+  padding-left: 8vmin;
+  padding-top: 4vmin;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #cc99ff;
+  overflow-y: auto;
+  border-bottom-left-radius: 40px;
+  position: relative;
+}
+form {
+  width: -webkit-fill-available;
+  padding-top: 2vmin;
+  padding-right: 6vmin;
+  padding-bottom: 6vmin;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'] {
+  border: none;
+  border-bottom: 1px solid #d3d3d3;
+  margin-bottom: 2vmin;
+  height: 4vmin;
+  width: 100%;
+  background-color: #cc99ff;
+}
+label {
+  color: #ffffff;
+  font-family: 'font3';
+}
+input {
+  transition: all 0.2s;
+  color: white;
+  font-family: 'font4';
+}
+input::placeholder {
+  font-family: 'font4';
+  color: white;
+  opacity: 0.4;
+}
+input:focus {
+  outline: none;
+  color: white;
+  font-family: 'font4';
+}
+
+input[type='checkbox'] {
+  cursor: pointer;
+}
+input[type='checkbox']:checked {
+  background-color: green;
+}
+
+input[name='signUp'] {
+  width: 110px;
+  height: 38px;
+  font-family: font3;
+  border: 0;
+  border-radius: 40px;
+  color: #cc99ff;
+  background-color: white;
+  margin-right: 4vmin;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+input[name='signUp']:hover {
+  background-color: #cc99ff;
+  color: white;
+  border: 1px white solid;
+}
+input[name='signIn'] {
+  width: 110px;
+  height: 38px;
+  font-family: font3;
+  border: 0;
+  border-radius: 6px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  margin-right: 4vmin;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+input[name='signIn']:hover {
+  margin-left: 1vmin;
+}
+#termsOfuse {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+#termsOfuse:hover {
+  color: rgb(255, 213, 0);
+}
+.errMessage {
+  color: rgb(255, 255, 255);
+  font-family: 'font4';
+  font-size: 14px;
+  color: rgb(255 245 0);
+}
+.whiteBox {
+  width: 100vmin;
+  height: 50vmin;
+  background-color: white;
+  position: absolute;
+  transform: translate(0vw, 100%);
+  z-index: -2;
+}
+}

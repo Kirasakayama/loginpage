@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="banner"></div>
+<div class="whiteBox" disabled></div>
+<section>
+
+    <h1 id="signUp">Sign Up</h1>
+    <small class="errMessage"></small>
+    <form action="index.php" method="post">
+
+        <label>Full Name <label> <br>
+
+        <input type="text" name="fullName" placeholder="Name..." required  oninvalid="this.setCustomValidity('please enter the full name to sign up')"   oninput="this.setCustomValidity('')"/><br>
+        <label> Email </label><br>
+        <input type="email" name="Email" placeholder="Email adress..." required  oninvalid="this.setCustomValidity('Email adress is reqiured to continue')"    oninput="this.setCustomValidity('')"/><br>
+        <label>Username</label> <br>
+        <input type="text" name="Username" placeholder="Username..." required  oninvalid="this.setCustomValidity('username is reqiured too continue')"    oninput="this.setCustomValidity('')"/><br>
+        <label>Password </label><br>
+        <input type="password" name="Password" placeholder="Password..." required oninvalid="this.setCustomValidity('please enter a password')"    oninput="this.setCustomValidity('')"/><br>
+        <label>Repeat Password</label> <br>
+        <input type="password" name="RepeatPassword" placeholder="Repeat your Password..." required oninvalid="this.setCustomValidity('please re-enter your password')"    oninput="this.setCustomValidity('')"/><br>
+        <input type="checkbox" name="terms" required oninvalid="this.setCustomValidity('you cannot continue without agreeing to the terms of use')"    oninput="this.setCustomValidity('')"/>
+        <label class="terms">I agree to the <span id="termsOfuse">Terms of User</span> </label><br><br>
+        <input type="submit" value="Sign Up" name="signUp" id="signup" required>
+        <input type="submit" value="Sign In →" name="signIn"> 
+        
+    </form>
+</section>
+
+
+
+
+<script src="script.js"></script>
+<script src="response.js"></script>
+</body>
+</html>
