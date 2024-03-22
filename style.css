@@ -161,7 +161,7 @@ input[name='signIn']:hover {
   color: rgb(255 245 0);
 }
 .whiteBox {
-  width: 100vmin;
+  width: 100vmw;
   height: 50vmin;
   background-color: white;
   position: absolute;
